@@ -86,4 +86,47 @@
         color: black;
         font-weight: 600;
     }
+
+    /* services */
+    .services * {
+        margin: 0;
+    }
+    .services {
+        margin-bottom: 100px;
+    }
+    .services > .items-service {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+    .services > .title-services {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .services > .title-services {
+        margin-bottom: 50px;
+    }
+    .services > .items-service > .item-service {
+        display: flex;
+        /* position: relative; */
+        flex-direction: column;
+        align-items: center;
+        flex-grow: 1;
+        gap: 10px;
+        border: 1px solid;
+        border-color: rgba(0, 0, 0, 0.404);
+        border-radius: 5px;
+        padding: 0 5px 5px 5px;
+    }
+    .services > .items-service > .item-service > img {
+        align-self: flex-start;
+        left: 0;
+    }
+    .services > .items-service > .item-service > p {
+        text-align: center;
+    }
+    .services > .items-service > .item-service > a {
+        text-decoration: none;
+    }
 }
