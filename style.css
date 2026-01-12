@@ -129,4 +129,60 @@
     .services > .items-service > .item-service > a {
         text-decoration: none;
     }
+
+    .solutions {
+        display: flex;
+        gap: 25px;
+        margin-bottom: 100px;
+    }
+    .solutions * {
+        margin: 0;
+    }
+    .solutions div:first-child {
+        align-self: center;
+    }
+    .solutions .items-solutions {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-bottom: 25px;
+    }
+    .items-solutions > .item-solutions {
+        display: flex;
+        gap: 15px;
+    }
+    .items-solutions > .item-solutions > div:first-child {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background-color: orange;
+    }
+    .solutions .title-solutions {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-bottom: 20px;
+
+    }
+    .solutions .btn-solutions {
+        display: flex;
+        gap: 20px;
+    }
+    .solutions .btn-solutions > a {
+        padding: 10px 25px;
+        border-radius: 5px;
+        text-decoration: none;
+    }
+    .solutions .btn-solutions > a:first-child {
+        background-color: orange;
+        color: white;
+    }
+    .solutions .btn-solutions > a:last-child{
+        border: 1px solid;
+        border-color: orange;
+        color: orange;
+    }
 }
