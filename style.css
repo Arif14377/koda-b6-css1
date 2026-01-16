@@ -1,17 +1,30 @@
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (max-width: 1024px) {
+    * {
+        box-sizing: border-box;
+    }
     body {
+        margin: 0;
+        padding: 0;
+    }
+    body > div {
         display: flex;
         flex-direction: row;
         gap: 20px;
         padding: 0;
         margin: 0;
     }
-    body > header {
+    body > div > header {
+        display: flex;
+        flex-direction: column;
         background-color: rgb(39, 37, 37);
         width: 30%;
         padding: 20px 20px;
     }
-    body > main {
+    header > nav {
+        display: flex;
+        flex-direction: column;
+    }
+    body > div > main {
         flex-grow: 1;
     }
     .navbar .logo > div {
@@ -129,17 +142,18 @@
     .services > .items-service > .item-service > a {
         text-decoration: none;
     }
-
     .solutions {
         display: flex;
         gap: 25px;
         margin-bottom: 100px;
+        padding: 20px 30px;
+        background-color: rgb(255, 223, 223);
     }
     .solutions * {
         margin: 0;
     }
-    .solutions div:first-child {
-        align-self: center;
+    h2 > span{
+        color: orangered;
     }
     .solutions .items-solutions {
         display: flex;
@@ -151,7 +165,7 @@
         display: flex;
         gap: 15px;
     }
-    .items-solutions > .item-solutions > div:first-child {
+    .items-solutions > .item-solutions > div:first-child > p {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -172,9 +186,10 @@
         gap: 20px;
     }
     .solutions .btn-solutions > a {
-        padding: 10px 25px;
+        padding: 10px 15px;
         border-radius: 5px;
         text-decoration: none;
+        min-width: 102.42px;
     }
     .solutions .btn-solutions > a:first-child {
         background-color: orange;
@@ -184,5 +199,69 @@
         border: 1px solid;
         border-color: orange;
         color: orange;
+    }
+    .about-us {
+        display: flex;
+    }
+
+    .cta {
+        background-color: orange;
+        color: white;
+        padding: 10px 15px;
+        border-radius: 5px;
+        text-decoration: none;
+        min-width: 102.42px;
+    }
+
+    .testimonial {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 40px;
+    }
+
+    .testimonial > .title-testimonial {
+        text-align: center;
+    }
+
+    .testimonial > .testimoni-cards {
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+    }
+    .testimonial > .testimoni-cards > .testimoni-item {
+        padding: 10px;
+        box-shadow: 1px 8px 14px -6px rgba(0,0,0,0.75);;
+        min-width: 100px;
+        
+    }
+    footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 30px;
+        background-color: orangered;
+    }
+}
+
+@media (max-width: 768px) {
+    * {
+        width: 100%;
+    }
+    body {
+        margin: 0 10px 0 10px;
+    }
+    body > div {
+        flex-direction: column ;
+    }
+    body > div > header {
+        flex-direction: row;
+        width: 100%;
+    }
+    header > nav {
+        flex-direction: row;
+    }
+    .navbar .menu ul {
+        flex-direction: row;
     }
 }
